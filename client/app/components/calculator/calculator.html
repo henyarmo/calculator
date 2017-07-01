@@ -1,0 +1,14 @@
+<div id="container">
+<input id="first" type="number" ng-model="$ctrl.values.first" ng-change="$ctrl.doCalculations($ctrl.sign, $ctrl.values.first, $ctrl.values.second)">
+<select id="action" ng-model="$ctrl.sign" ng-change="$ctrl.doCalculations($ctrl.sign, $ctrl.values.first, $ctrl.values.second)">
+  <option value="+">+
+  <option value="-">-
+  <option value="*">*
+  <option value="/">/
+</select>
+<input id="second" type="number" ng-model="$ctrl.values.second" ng-change="$ctrl.doCalculations($ctrl.sign, $ctrl.values.first, $ctrl.values.second)">
+
+<div id="result">= {{$ctrl.result}}</div>
+
+</div>
+
